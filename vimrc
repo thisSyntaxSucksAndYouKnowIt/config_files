@@ -18,17 +18,6 @@ let g:airline#extensions#tabline#enabled = 1
 "let g:Powerline_symbols='unicode'
 
 
-"C++ syntax higlighting
-"https://github.com/octol/vim-cpp-enhanced-highlight for documentation
-"let g:cpp_class_scope_highlight = 1
-"let g:cpp_member_variable_highlight = 1
-"let g:cpp_class_decl_highlight = 1
-"let g:cpp_experimental_simple_template_highlight = 1
-"let g:cpp_experimental_template_highlight = 1
-"let g:cpp_concepts_highlight = 1
-"let g:cpp_no_function_highlight = 1
-
-
 "Show line number
 set number
 
@@ -48,12 +37,12 @@ map <F3> :NERDTreeToggle<CR>
 nnoremap <CR> O<ESC>
 
 "Plugins
+Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-scripts/twilight256.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'powerline/fonts'
-Plugin 'octol/vim-cpp-enhanced-highlight'
 
 call vundle#end()
 filetype plugin indent on
