@@ -6,7 +6,8 @@ set rtp +=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 "No auto indentation
-filetype indent off
+"filetype indent off
+set shiftwidth=4
 
 "COLOR
 syntax on
