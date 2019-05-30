@@ -36,6 +36,7 @@ map <F3> :NERDTreeToggle<CR>
 
 "newline not insert
 nnoremap <CR> O<ESC>
+nmap <CR> o<Esc>
 
 "Plugins
 Plugin 'VundleVim/Vundle.vim'
