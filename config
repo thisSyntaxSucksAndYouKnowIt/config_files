@@ -10,10 +10,10 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 #nm-applet
-exec_always nm-applet &
+#exec_always nm-applet &
 
 # Wallpaper
-exec_always --no-startup-id feh --bg-scale /home/unknown/documents/images/1.jpg
+#exec_always --no-startup-id feh --bg-scale /home/unknown/documents/images/1.jpg
 
 set $mod Mod4
 
