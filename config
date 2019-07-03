@@ -13,7 +13,7 @@
 #exec_always nm-applet &
 
 # Wallpaper
-#exec_always --no-startup-id feh --bg-scale /home/unknown/documents/images/1.jpg
+#exec_always --no-startup-id feh --bg-scale /home/unknown/documents/images/2.jpg
 
 set $mod Mod4
 
@@ -139,6 +139,9 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 gaps inner 8
 gaps outer 0
 
+#title bar
+for_window [class="^.*"] border pixel 1
+
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
@@ -177,6 +180,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status
+        position top
 }
 
 # Window color
