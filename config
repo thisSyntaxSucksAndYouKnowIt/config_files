@@ -38,6 +38,10 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec urxvt
+
+# start firefox
+bindsym $mod+Shift+w exec firefox
+
 # kill focused window
 bindsym $mod+q kill
 
@@ -140,7 +144,7 @@ gaps inner 8
 gaps outer 0
 
 #title bar
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 2
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
