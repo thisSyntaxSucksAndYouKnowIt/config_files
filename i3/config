@@ -53,7 +53,7 @@ bindsym $mod+d exec dmenu_run
 bindsym $mod+s exec --no-startup-id /home/unknown/.config/i3/scripts/screencap.sh
 
 #i3lock
-bindsym $mod+F2 exec --no-startup-id i3lock
+bindsym $mod+F2 exec --no-startup-id /home/unknown/.config/i3/scripts/i3lock_rice.sh
 
 #Volume control
 bindsym XF86AudioMute exec --no-startup-id amixer sset 'Master' toggle
