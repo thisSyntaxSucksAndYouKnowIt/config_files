@@ -61,8 +61,8 @@ bindsym XF86AudioLowerVolume exec --no-startup-id amixer sset 'Master' 5%-
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer sset 'Master' 5%+
 
 #Brightness controls
-bindsym $mod+Home exec xbacklight -inc 5 # increase screen brightness
-bindsym $mod+End exec xbacklight -dec 5 # decrease screen brightness
+bindsym $mod+Home exec --no-startup-id xbacklight -inc 5 # increase screen brightness
+bindsym $mod+End exec --no-startup-id xbacklight -dec 5 # decrease screen brightness
 
 # change focus
 bindsym $mod+h focus left
