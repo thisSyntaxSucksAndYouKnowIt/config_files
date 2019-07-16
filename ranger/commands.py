@@ -16,6 +16,23 @@ import os
 from ranger.api.commands import Command
 
 
+class walcs(Command):
+    """:walcs
+
+    Set colorscheme with background image
+    """
+    def execute(self):
+        if self.arg(1):
+            target_filename = self.rest(1)
+        else:
+            target_filename = self.fm.thisfile.path
+
+        self.fm.notify("Let's make a new coloscheme with " + target_filename + "!")
+        self.fm.run("wal -i " + target_filename)
+
+    def tab(self, tabnum):
+        return self._tab_directory_content()
+
 # Any class that is a subclass of "Command" will be integrated into ranger as a
 # command.  Try typing ":my_edit<ENTER>" in ranger!
 class my_edit(Command):
